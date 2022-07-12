@@ -387,12 +387,18 @@
 
 <label for="user-comment" class="modal-label">Комментарий</label>
 <div class="modal-group comment-group">
-<input type="text" name="comment" id="user-comment" placeholder="Введите текст" class="modal-input comment-input">
+
+<textarea  name="comment" id="user-comment" placeholder="Введите текст" class="modal-input comment-input"></textarea>
+
 </div>
 <div class="modal-agreement-group">
-<input class="checkbox visually-hidden" type="checkbox" name="agreement" id="user-agreement">
-<span class="custom-checkbox"></span>
-<label for="user-agreement" class="modal-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="link agreement-link" href=""> Условия договора</a></label>
+
+
+<label class="agreement-group-label">
+  <input class="checkbox visually-hidden" type="checkbox" name="agreement">
+  <span class="custom-checkbox"></span>
+  <span class="modal-label agreement-label"> Соглашаюсь с рассылкой и принимаю <a class="link agreement-link" href=""> Условия договора</a></span>
+  </label>
  </div>
     </form>
     <button type="submit" class="button submit-button">Отправить</button>
